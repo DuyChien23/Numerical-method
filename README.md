@@ -1,1 +1,1 @@
-# Calculation methods
+# Numerical methods
