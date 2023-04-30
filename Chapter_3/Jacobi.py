@@ -1,5 +1,5 @@
 from MaTrix import Matrix
-def jacobi(A, b, x0, tol=1e-6, max_iter=1000):
+def jacobi(A, b, x0, tol=1e-6, max_iter=10000):
     n = A.rows
     x = x0.copy()
     for k in range(max_iter):
