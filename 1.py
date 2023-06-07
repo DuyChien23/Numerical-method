@@ -3,8 +3,8 @@ import math
 def f(x):
     return math.sin(x)
 
-def f_prime(x):
-    return math.cos(x)
+def f_prime(x, h = 0.01):
+    return (f(x - 2 * h) - 8 * f(x - h) + 8 * f(x + h) - f(x + 2 * h)) / (12 * h)
 
 def bisection_method(f, a, b, epsilon):
     if f(a) * f(b) >= 0:
